@@ -35,20 +35,20 @@ var t = new Twit({
 });
 
 
-var ref_index = 0;
+var ref_index = -1;
 
 
 var printLine = function(){
-  var tweet = {
-    status: lyrics[ref_index].toString()
-  };
-  return tweet
   if (ref_index < 20) {
   ref_index += 1;
   }
   else{
     ref_index = 0;
   };
+  var tweet = {
+    status: lyrics[ref_index].toString()
+  };
+  return tweet
 };
 
 var post = function() {
