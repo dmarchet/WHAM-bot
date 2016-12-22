@@ -2,6 +2,8 @@ var _ = require('lodash');
 var Client      = require('node-rest-client').Client;
 var Twit        = require('twit');
 var async       = require('async');
+import * as library from 'library';
+
 var t = new Twit({
   consumer_key:         : process.env.PICKTWOBOT_TWIT_CONSUMER_KEY,
   consumer_secret:      : process.env.PICKTWOBOT_TWIT_CONSUMER_SECRET,
@@ -10,18 +12,26 @@ var t = new Twit({
 });
 
 
-// var ref_index = 0;
+var ref_index = 0;
 
-// var printLine = function(){
-//   console.log(lyrics[ref_index].toString());
-//   if (ref_index < 20) {
-//   ref_index += 1;
-//   }
-//   else{
-//     ref_index = 0;
-//   };
-// };
+var post = t.post('statuses/update', printLine(), function(err, data, response){
+  console.log(data);
+});
 
-// setInterval(printLine, 180000)
+var printLine = function(){
+  var tweet = {
+    status: library.lyrics[ref_index].toString();
+  };
+  if (ref_index < 20) {
+  ref_index += 1;
+  }
+  else{
+    ref_index = 0;
+  };
+};
+
+setInterval(post, 180000);
+
+
 
 
