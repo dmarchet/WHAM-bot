@@ -1,0 +1,24 @@
+{
+  "name": "wham-bot",
+  "version": "1.0.0",
+  "description": "Shares the joy of Wham's \"Last Christmas\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmarchet/WHAM-bot.git"
+  },
+  "author": "Dennis Marchetti <12daysofwham@gmail.com> (https://www.12daysurl.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmarchet/WHAM-bot/issues"
+  },
+  "homepage": "https://github.com/dmarchet/WHAM-bot#readme",
+  "dependencies": {
+    "async": "^2.1.4",
+    "node-rest-client": "^2.0.1",
+    "twit": "^2.2.5"
+  }
+}
