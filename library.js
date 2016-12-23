@@ -21,21 +21,3 @@ var lyrics = [
 ["Last Christmas I gave you my heart You gave it away"],
 ["I'll give it to someone, I'll give it to someone"]
 ];
-var ref_index = 3
-var emoji       = require('node-emoji');
-var printLine = function(){
-  if (ref_index < 20) {
-  ref_index += 1;
-  }
-  else{
-    ref_index = 0;
-  };
-  var emojify1 = emoji.random().emoji
-  var emojify2 = emoji.random().emoji
-  var tweet = {
-    status: (emojify1 + "  " + lyrics[ref_index].toString() + ' ' + emojify2)
-  };
-  return tweet
-};
-
-console.log(printLine())
