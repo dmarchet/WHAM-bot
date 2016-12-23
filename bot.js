@@ -4,6 +4,7 @@ var Client      = require('node-rest-client').Client;
 var Twit        = require('twit');
 var async       = require('async');
 var emoji       = require('node-emoji');
+
 var lyrics = [
 ["Last Christmas, I gave you my heart But the very next day, you gave it away"],
 ["This year, to save me from tears I'll give it to someone special"],
