@@ -21,4 +21,3 @@ var lyrics = [
 ["Last Christmas I gave you my heart You gave it away"],
 ["I'll give it to someone, I'll give it to someone"]
 ];
-
