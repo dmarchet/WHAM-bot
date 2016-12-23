@@ -19,6 +19,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "dotenv": "^2.0.0",
+    "node-emoji": "^1.4.3",
     "node-rest-client": "^2.0.1",
     "twit": "^2.2.5"
   },

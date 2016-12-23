@@ -3,6 +3,7 @@ var _ = require('lodash');
 var Client      = require('node-rest-client').Client;
 var Twit        = require('twit');
 var async       = require('async');
+var emoji       = require('node-emoji');
 var lyrics = [
 ["Last Christmas, I gave you my heart But the very next day, you gave it away"],
 ["This year, to save me from tears I'll give it to someone special"],
@@ -45,8 +46,10 @@ var printLine = function(){
   else{
     ref_index = 0;
   };
+  var emojify1 = emoji.random().emoji
+  var emojify2 = emoji.random().emoji
   var tweet = {
-    status: lyrics[ref_index].toString()
+    status: (emojify1 + "  " + lyrics[ref_index].toString() + ' ' + emojify2)
   };
   return tweet
 };
