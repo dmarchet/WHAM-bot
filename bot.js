@@ -60,7 +60,7 @@ var post = function() {
 });
 }
 
-setInterval(post, 180000);
+setInterval(post, 60000 * 60);
 
 
 
